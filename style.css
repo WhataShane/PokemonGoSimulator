@@ -1,0 +1,185 @@
+body {
+  padding: 0; 
+  margin: 0;
+  overflow:hidden;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+ins {
+  background-color:red;
+}
+.container {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+}
+
+.container2{
+  position:absolute;
+  top:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.pgoprv{
+  max-width:200px;
+  position:absolute;
+  top:10px;
+  width:50vw;
+  pointer-events:none;
+} 
+
+.pgoprv2{
+  top:125px;
+  max-width:300px;
+  position:absolute;
+  pointer-events:none;
+  width:50vw;
+}
+
+
+.pokemon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  margin-left: -25px;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #008898;
+  background-color: #008898;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  color: #a5ff9e;
+  box-shadow: inset 0 0 0 2px #a5ff9e;
+  font-weight: 100;
+}
+.pokemon:focus {
+  outline: none;
+}
+.pokemon:before, .pokemon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  opacity: 0;
+}
+.pokemon:before {
+  border: 6px solid white;
+  z-index: -1;
+}
+.pokemon:after {
+  z-index: 1;
+  background-color: white;
+}
+.pokemon.animation:before {
+  -webkit-animation: bigCircle 600ms ease;
+          animation: bigCircle 600ms ease;
+}
+.pokemon.animation:after {
+  -webkit-animation: smallCircle 600ms ease;
+          animation: smallCircle 600ms ease;
+}
+
+@-webkit-keyframes smallCircle {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@keyframes smallCircle {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 65px;
+    height: 65px;
+  }
+}
+@-webkit-keyframes bigCircle {
+  0%,
+	50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 175px;
+    height: 175px;
+  }
+}
+@keyframes bigCircle {
+  0%,
+	50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 175px;
+    height: 175px;
+  }
+}
+
+ins{
+  display:flex;
+  justify-content:center;
+  position:relative;
+  bottom:-300px;
+}
+
+.text{
+  position:relative;
+  top:350px;
+  
+  
+  color: white;
+
+  
+  
+  font-size:3em;
+  font-weight:600;
+     pointer-events:none;
+     text-align: center;
+}
+
+.subtext{
+  font-size:.5em;
+}
+
+
+
+
+
+
+
+
+@media (max-width:676px) {
+  .text{
+    font-size:2em;
+    position:relative;
+    top:250px;
+  }
+}
+
+@media (max-width:450px) {
+
+  .text{
+    font-size:1.7em;
+  }
+}
+
