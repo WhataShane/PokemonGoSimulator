@@ -18,7 +18,7 @@ body {
   align-items:center;
   position:relative;
   top:20px;
-
+  pointer-events:none;
 }
 .pgoprv{
   position:relative;
@@ -26,13 +26,13 @@ body {
   width:50vw;
   pointer-events:none;
 } 
-
 .pgoprv2{
   position:relative;
   top:10px;
   max-width:300px;
   pointer-events:none;
   width:50vw;
+  pointer-events:none;
 }
 
 .text{
@@ -43,10 +43,12 @@ body {
   font-weight:600;
   pointer-events:none;
   text-align: center;
+  pointer-events:none;
 }
 
 .subtext{
   font-size:.5em;
+  pointer-events:none;
 }
 
 #my{

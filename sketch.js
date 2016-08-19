@@ -181,11 +181,11 @@ var s = function(p) {
 }
 new p5(s, 'my');
 $(document).on('click', 'canvas', function() {
-    $('.container2').fadeOut()
+    $('.container').fadeOut()
 })
 
 $(window).keypress(function(e) {
   if (e.keyCode == 0 || e.keyCode == 32) {
-    $('.container2').fadeOut()
+    $('.container').fadeOut()
   }
 });
