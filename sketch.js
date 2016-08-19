@@ -40,7 +40,8 @@ var s = function(p) {
 
     p.draw = function() {
       
-
+        x = p.second()
+        console.log(x)
         
         
         p.background('#00bff3');
@@ -104,8 +105,27 @@ var s = function(p) {
         movingfloor = movingfloor - 2
         grassfloor = grassfloor - 2
         p.image(grass, grassfloor, p.height - 129, 40, 40)
+        
+        
+        
+        
+        if(score < 10){
         xpos = xpos - 4
         xposclone = xposclone - 4
+        }
+        if(xposclone <= 0){
+        x = Math.random()
+        }
+        if(score > 9 & x > 0.50){
+          
+        xpos = xpos - 4
+        xposclone = xposclone - 6
+        }else if(score > 9 & x < 0.51){
+          
+        xpos = xpos - 4
+        xposclone = xposclone - 7
+        }
+        
         
         
       
@@ -182,6 +202,9 @@ var s = function(p) {
         return n % 2 == 0;
     }
     
+    function randomIntFromInterval(min,max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
+    }
     
     
 
@@ -190,4 +213,6 @@ var s = function(p) {
 
 new p5(s, 'my');
 
-
+$( document ).on( 'click', 'canvas', function() {
+   $('.container2').fadeOut()
+});

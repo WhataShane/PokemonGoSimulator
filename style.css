@@ -11,6 +11,7 @@ ins {
   background-color:red;
 }
 .container {
+  pointer-events:none;
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
