@@ -11,9 +11,7 @@ var s = function(p) {
     var count = 0;
     var placeholder;
     var what = true;
-    
-    
-
+    var x;
     p.setup = function() {
         p.createCanvas(window.innerWidth, window.innerHeight);
         ball = p.loadImage("assets/pkred.png");
@@ -37,23 +35,14 @@ var s = function(p) {
             count = count + .5
         }, 100);
     }
-
     p.draw = function() {
-      
-        x = p.second()
-        console.log(x)
-        
-        
         p.background('#00bff3');
         if (placeholder == true) {
             p.fill(p.random(255), p.random(255), p.random(255))
             p.text("Caught!", 50, 30)
         } else if (placeholder == false) {
-
-              p.fill(255)
-
+            p.fill(255)
             p.text("It ran away...", 60, 30)
-            
         }
         if (score >= 10) {
             ball = ball2;
@@ -61,7 +50,6 @@ var s = function(p) {
         if (score >= 50) {
             ball = ball3;
         }
-
         p.textSize(32);
         p.fill(255)
         p.stroke(0)
@@ -88,47 +76,40 @@ var s = function(p) {
             endscreen = true
             p.noLoop()
             p.background('#00bff3');
-            p.text("          Game Over\n     Pidgey Caught: " + score + "\n      Press Anywhere\n           to Restart \n", 10, 30)
+            p.text("     Pidgey Caught: " + score +
+                "\n      Press Anywhere\n           to Restart \n",
+                10, 30)
             p.textSize(16);
-            p.text("\n\n\n\n\n\n\n\nUse the spacebar or tap the screen (mobile)\n                  to move your character\n             Game by: Shane Brunswick", 10, 30)
-            
-            
+            p.text(
+                "\n\n\n\n\n\n\n\nUse the spacebar or tap the screen (mobile)\n                  to move your character\n             Game by: Shane Brunswick",
+                10, 10)
             window.setTimeout(function() {
-    parent.document.getElementById('fuck')
-}, 1000);
+                parent.document.getElementById('fuck')
+            }, 1000);
         } else if (xposclone < -40 & inair === false) {
             xposclone = p.width;
         }
         for (i = 1; i < 100; i++) {
-            p.image(thefloor, (movingfloor - 1) + (991 * i), p.height - 89)
+            p.image(thefloor, (movingfloor - 1) + (991 * i), p.height -
+                89)
         }
         movingfloor = movingfloor - 2
         grassfloor = grassfloor - 2
         p.image(grass, grassfloor, p.height - 129, 40, 40)
-        
-        
-        
-        
-        if(score < 10){
-        xpos = xpos - 4
-        xposclone = xposclone - 4
+        if (score < 10) {
+            xpos = xpos - 4
+            xposclone = xposclone - 4
         }
-        if(xposclone <= 0){
-        x = Math.random()
+        if (xposclone <= 0) {
+            x = Math.random()
         }
-        if(score > 9 & x > 0.50){
-          
-        xpos = xpos - 4
-        xposclone = xposclone - 6
-        }else if(score > 9 & x < 0.51){
-          
-        xpos = xpos - 4
-        xposclone = xposclone - 7
+        if (score > 9 & x > 0.50) {
+            xpos = xpos - 7
+            xposclone = xposclone - 6
+        } else if (score > 9 & x < 0.51) {
+            xpos = xpos - 7
+            xposclone = xposclone - 7
         }
-        
-        
-        
-      
         if (isEven(count) == true) {
             blob = blob2
         } else {
@@ -136,7 +117,6 @@ var s = function(p) {
         }
         p.image(blob, xpos, p.height - 139, 50, 50)
         p.image(thefloor, movingfloor, p.height - 89)
-
         if (grassfloor < -30) {
             grassfloor = p.width + 20;
         }
@@ -146,11 +126,11 @@ var s = function(p) {
                 score += 1;
                 placeholder = true;
             } else if (Math.random() > 0.45 & score > 9 & score < 50) {
-              score += 1;
-              placeholder = true;
+                score += 1;
+                placeholder = true;
             } else if (Math.random() > 0.1 & score > 49) {
-              score += 1;
-              placeholder = true;
+                score += 1;
+                placeholder = true;
             } else {
                 placeholder = false;
             }
@@ -160,18 +140,12 @@ var s = function(p) {
         p.translate(30, ypos);
         p.rotate(p.frameCount / 5.0);
         p.image(ball, -15, -15, 30, 30);
-
-
         if (ypos != p.height - 103) {
             inair = true;
         } else {
             inair = false
         }
-
-
-
     }
-
     document.onkeypress = function(e) {
         e = e || window.event;
         if (e.keyCode == "32" & ypos == p.height - 103) {
@@ -181,7 +155,6 @@ var s = function(p) {
             }, 500);
         }
     };
-
     p.touchStarted = function() {
         if (ypos == p.height - 103) {
             if (endscreen === false) {
@@ -201,18 +174,18 @@ var s = function(p) {
     function isEven(n) {
         return n % 2 == 0;
     }
-    
-    function randomIntFromInterval(min,max) {
-    return Math.floor(Math.random()*(max-min+1)+min);
+
+    function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
     }
-    
-    
-
-
 }
-
 new p5(s, 'my');
+$(document).on('click', 'canvas', function() {
+    $('.container2').fadeOut()
+})
 
-$( document ).on( 'click', 'canvas', function() {
-   $('.container2').fadeOut()
+$(window).keypress(function(e) {
+  if (e.keyCode == 0 || e.keyCode == 32) {
+    $('.container2').fadeOut()
+  }
 });
