@@ -1,0 +1,94 @@
+body {
+  background: url(http://i66.tinypic.com/16h3kfk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background: rgb(22, 22, 22);
+  background: rgba(22, 22, 22, 0.6);
+  position: absolute;
+  width: 100%;
+}
+
+h1 {
+  min-height: 80px;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 40px;
+  font-weight: 400;
+}
+
+p {
+  width: 90%;
+  max-width: 700px;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 16px;
+  font-weight: 300;
+}
+
+img {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  height: 50px;
+  border: 1px solid #ebebeb;
+  background: -webkit-linear-gradient(top, #fefefe, #fdfdfd);
+  background: linear-gradient(to bottom, #fefefe, #fdfdfd);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #6699ff;
+  text-decoration: none;
+  -webkit-transition: color 1000ms linear;
+  transition: color 1000ms linear;
+}
+
+.button:hover {
+  color: black;
+}
+
+@media (min-width:670px) {
+  .content {
+    height: 100%;
+  }
+}
+
+@media (max-width:670px) {
+  h1 {
+    font-size: 1.2em;
+    font-weight: 400;
+    min-height: 35px;
+  }
+}
