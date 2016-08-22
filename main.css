@@ -346,5 +346,5 @@ img {
 }
 
 .pgoprv2{
-  display:none
+  visibility: hidden;
 }
