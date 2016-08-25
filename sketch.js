@@ -28,6 +28,8 @@ var s = function(p) {
         bad = p.loadImage("assets/bad.png");
         grass = p.loadImage("assets/grass.png");
         balloon = p.loadImage("assets/balloon.png");
+        mew1 = p.loadImage("assets/mew1.png");
+        mew2 = p.loadImage("assets/mew1.png");
         xpos = p.width;
         xposclone = p.width;
         ypos = p.height - 103;
@@ -114,10 +116,15 @@ var s = function(p) {
             xpos = xpos - 7
             xposclone = xposclone - 7
         }
-        if (isEven(count) == true) {
+        if (isEven(count) == true & score != 151) {
             blob = blob2
         } else {
             blob = blobback
+        }
+        if (isEven(count) == true & score == 151) {
+            blob = mew1
+        } else if (isEven(count) != true & score == 151) {
+            blob = mew2
         }
         p.image(blob, xpos, p.height - 139, 50, 50)
         p.image(thefloor, movingfloor, p.height - 89)
