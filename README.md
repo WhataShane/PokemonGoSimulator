@@ -9,4 +9,4 @@
 - [ ] Polish CSS of about me page
 - [ ] Fix Niantic Hitbox detection
 - [x] Move "Caught" text so that it doesn't overlap the score count @ 100+
-- [ ] Fix IOS CSS rendering + Jquery functionality
+- [x] Fix IOS CSS rendering + Jquery functionality
