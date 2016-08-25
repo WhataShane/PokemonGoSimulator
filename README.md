@@ -8,5 +8,5 @@
 - [x] Have bonus for players who reach 151 (Pidgey's become Dragonite? Masterball upgrade? Mew floats in background?)
 - [ ] Polish CSS of about me page
 - [ ] Fix Niantic Hitbox detection
-- [ ] Move "Caught" text so that it doesn't overlap the score count @ 100+
+- [x] Move "Caught" text so that it doesn't overlap the score count @ 100+
 - [ ] Fix IOS CSS rendering + Jquery functionality

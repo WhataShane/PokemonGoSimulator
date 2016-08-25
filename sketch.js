@@ -45,7 +45,7 @@ var s = function(p) {
         p.background('#00bff3');
         if (placeholder == true) {
             p.fill(p.random(255), p.random(255), p.random(255))
-            p.text("Caught!", 50, 30)
+            p.text("Caught!", 60, 30)
         } else if (placeholder == false) {
             p.fill(255)
             p.text("It ran away...", 60, 30)
@@ -89,9 +89,6 @@ var s = function(p) {
             p.text(
                 "\n\n\n\n\n\n\n\nUse the spacebar or tap the screen (mobile)\n                  to move your character\n             Game by: Shane Brunswick",
                 10, 10)
-            window.setTimeout(function() {
-                parent.document.getElementById('fuck')
-            }, 1000);
         } else if (xposclone < -40 & inair === false) {
             xposclone = p.width;
         }
