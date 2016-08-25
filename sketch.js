@@ -1,6 +1,7 @@
 var s = function(p) {
     var ball;
-    var xpos;
+    var xpos, ypos;
+    var yvel;
     var movingfloor;
     var jump;
     var inair;
@@ -9,6 +10,8 @@ var s = function(p) {
     var score = 0;
     var endscreen = false;
     var count = 0;
+    var jump_speed = 10;
+    var gravity = 0.3;
     var placeholder;
     var what = true;
     var x;
@@ -28,6 +31,7 @@ var s = function(p) {
         xpos = p.width;
         xposclone = p.width;
         ypos = p.height - 103;
+        yvel = 0;
         movingfloor = 0;
         grassfloor = p.width - 10;
         balloonmove = p.width;
@@ -63,13 +67,13 @@ var s = function(p) {
             balloonmove = p.width + 30;
         }
         if (jump === true) {
-            ypos = ypos - 7
-        }
-        if (jump === false) {
-            ypos = ypos + 5
+            ypos = ypos - yvel;
+            yvel = yvel - gravity;
         }
         if (ypos > p.height - 103) {
-            ypos = p.height - 103
+            jump = false;
+            yvel = 0;
+            ypos = p.height - 103;
         }
         if (xposclone < -40 & xposclone > -70 & inair === false) {
             xposclone = p.width;
@@ -140,7 +144,7 @@ var s = function(p) {
         p.translate(30, ypos);
         p.rotate(p.frameCount / 5.0);
         p.image(ball, -15, -15, 30, 30);
-        if (ypos != p.height - 103) {
+        if (ypos < p.height - 103) {
             inair = true;
         } else {
             inair = false
@@ -150,18 +154,14 @@ var s = function(p) {
         e = e || window.event;
         if (e.keyCode == "32" & ypos == p.height - 103) {
             jump = true;
-            setTimeout(function() {
-                jump = false;
-            }, 500);
+            yvel = jump_speed;
         }
     };
     p.touchStarted = function() {
         if (ypos == p.height - 103) {
             if (endscreen === false) {
                 jump = true;
-                setTimeout(function() {
-                    jump = false;
-                }, 600);
+                yvel = jump_speed;
             }
             if (endscreen === true) {
                 score = 0
