@@ -5,7 +5,8 @@
 - [x] Revamp P5 sketch implementation, get rid of hacky iframe embedding
 - [x] Implement Pokeball upgrades as game progresses
 - [x] Make a home/about me page
-- [ ] Have bonus for players who reach 151 (Pidgey's become Dragonite? Masterball upgrade? Mew floats in background?)
+- [x] Have bonus for players who reach 151 (Pidgey's become Dragonite? Masterball upgrade? Mew floats in background?)
+- [ ] Polish CSS of about me page
 - [ ] Fix Niantic Hitbox detection
 - [ ] Move "Caught" text so that it doesn't overlap the score count @ 100+
-- [ ] Polish IOS CSS rendering
+- [ ] Fix IOS CSS rendering + Jquery functionality
