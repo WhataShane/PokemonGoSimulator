@@ -188,7 +188,7 @@ $(document).on('click', 'canvas', function() {
     $('.container').fadeOut()
 })
 
-$(document).on('tap', 'canvas', function() {
+$(document).on('touchstart', 'canvas', function() {
     $('.container').fadeOut()
 })
 
