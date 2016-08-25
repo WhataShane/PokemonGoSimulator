@@ -10,8 +10,8 @@ var s = function(p) {
     var score = 0;
     var endscreen = false;
     var count = 0;
-    var jump_speed = 10;
-    var gravity = 0.3;
+    var jump_speed = 11;
+    var gravity = 0.25;
     var placeholder;
     var what = true;
     var x;
