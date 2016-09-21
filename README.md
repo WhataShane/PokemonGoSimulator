@@ -30,19 +30,14 @@ http://shouyou.gamersky.com/news/201608/800969.shtml
 http://wap.gamersky.com/news/Content-800969.html
 http://www.iyingdi.com/article/24979/content
 http://game.ettoday.net/article/765563.htm
-
-
-
-
-
-![http://www.kejixun.com/article/160830/216701.shtml](http://www.kejixun.com/statics/images/logo.png "Optional title") ![http://www.cbigame.com/news/22889-%E8%A1%A5%E7%BB%99%E7%AB%99%E5%88%86%E5%B8%83%E4%B8%8D%E5%9D%87%20%E5%B0%91%E5%B9%B4%E8%87%AA%E5%88%B6%E9%83%8A%E5%8C%BA%E7%89%88%E3%80%8A%E7%B2%BE%E7%81%B5%E5%AE%9D%E5%8F%AF%E6%A2%A6%EF%BC%9AGO%E3%80%8B](http://www.cbigame.com/images/logo.png "Optional title") ![http://www.gamedog.cn/news/20160830/1862107.html](http://i.imgur.com/St3I9oh.png "Optional title") ![http://koudaiyaoguaigo.net/2016/08/30/14%E5%B2%81%E5%B0%91%E5%B9%B4%E8%87%AA%E5%88%B6%E9%83%8A%E5%8C%BA%E7%89%88%E3%80%8A%E5%8F%A3%E8%A2%8B%E5%A6%96%E6%80%AA%EF%BC%9Ago%E3%80%8B-%E7%8E%A9%E6%B3%95%E4%BC%BC%E3%80%8A%E9%A9%AC%E9%87%8C/](http://i.imgur.com/7GqlhMQ.png "Optional title")
-
-
-
+http://www.kejixun.com/article/160830/216701.shtml
+http://www.cbigame.com/news/22889-%E8%A1%A5%E7%BB%99%E7%AB%99%E5%88%86%E5%B8%83%E4%B8%8D%E5%9D%87%20%E5%B0%91%E5%B9%B4%E8%87%AA%E5%88%B6%E9%83%8A%E5%8C%BA%E7%89%88%E3%80%8A%E7%B2%BE%E7%81%B5%E5%AE%9D%E5%8F%AF%E6%A2%A6%EF%BC%9AGO%E3%80%8B
+http://www.gamedog.cn/news/20160830/1862107.html
+http://koudaiyaoguaigo.net/2016/08/30/14%E5%B2%81%E5%B0%91%E5%B9%B4%E8%87%AA%E5%88%B6%E9%83%8A%E5%8C%BA%E7%89%88%E3%80%8A%E5%8F%A3%E8%A2%8B%E5%A6%96%E6%80%AA%EF%BC%9Ago%E3%80%8B-%E7%8E%A9%E6%B3%95%E4%BC%BC%E3%80%8A%E9%A9%AC%E9%87%8C/
 
 Korea:
+http://www.thisisgame.com/webzine/community/nboard/4/?n=64380
 
-![http://www.thisisgame.com/webzine/community/nboard/4/?n=64380](http://file.thisisgame.com/upload/site/common/banner/2015/03/13/20150313142306_9588.png "Optional title")
 
 
 - [x] Complete basic game
