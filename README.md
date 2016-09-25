@@ -1,5 +1,11 @@
 ### Pokemon: Suburban Version. http://suburbanversion.com/game
 
+My name's Shane Brunswick, and I'm 14 years old. I set out to make this game in hopes of alerting Niantic of the severity of the communities disdain for current spawning mechanics.
+
+C'mon, Niantic, I've literally managed to teach myself Javascript just to make a statement regarding the lack of Pokemon in suburban/rural areas in Pokemon GO! (granted, if my game were a Pidgey, by comparison, yours would be a Dragonite, so full marks for... most of what you've done with GO)
+
+---
+
 My games been featured in a multitude of international media outlets! Thank you, everyone, for helping me spread the message! Niantic, if you're reading this, please level the playing field for suburban/rural Pokemon GO players! As you can see below, the lack of viable Pokemon in non-metropolitan areas is afflicting Pokemon GO players internationally.
 ![na](http://i.imgur.com/I4JlIck.png)
 
