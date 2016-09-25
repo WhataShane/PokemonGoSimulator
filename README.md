@@ -1,6 +1,6 @@
 ### Pokemon: Suburban Version. http://suburbanversion.com/game
 
-My games been featured in a multitude of international media outlets! Thank you, everyone, for helping me spread the message! Niantic, if you're reading this, please level the playing field for suburban/rural Pokemon GO players!
+My games been featured in a multitude of international media outlets! Thank you, everyone, for helping me spread the message! Niantic, if you're reading this, please level the playing field for suburban/rural Pokemon GO players! As you can see below, the lack of viable Pokemon in non-metropolitan areas is being noticed internationally.
 ![na](http://i.imgur.com/I4JlIck.png)
 
 
